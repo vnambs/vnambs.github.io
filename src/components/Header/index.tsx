@@ -10,10 +10,10 @@ import Nav from './nav';
 import styles from './style.module.scss';
 
 export default function Header() {
-	const header = useRef(null);
-	const [isActive, setIsActive] = useState(false);
+	const header = useRef<HTMLDivElement | null>(null);
+	const [isActive, setIsActive] = useState<boolean>(false);
 	const pathname = usePathname();
-	const button = useRef(null);
+	const button = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		if (isActive) setIsActive(false);
@@ -34,11 +34,12 @@ export default function Header() {
 					});
 				},
 				onEnterBack: () => {
-					gsap.to(
-						button.current,
-						{ scale: 0, duration: 0.25, ease: 'power1.out' },
-						setIsActive(false)
-					);
+					gsap.to(button.current, {
+						scale: 0,
+						duration: 0.25,
+						ease: 'power1.out',
+					});
+					setIsActive(false);
 				},
 			},
 		});
