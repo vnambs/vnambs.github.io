@@ -9,7 +9,7 @@ import Rounded from '../../common/RoundedButton';
 import Nav from './nav';
 import styles from './style.module.scss';
 
-export default function index() {
+export default function Header() {
 	const header = useRef(null);
 	const [isActive, setIsActive] = useState(false);
 	const pathname = usePathname();

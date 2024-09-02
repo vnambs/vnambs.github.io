@@ -1,6 +1,6 @@
 'use client'
 import { motion, useAnimate } from 'framer-motion'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { opacity, slideUp } from './anim'
 import styles from './style.module.scss'
 
