@@ -14,6 +14,7 @@ export default function Contact() {
   const x = useTransform(scrollYProgress, [0, 1], [0, 100])
   const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+  const currentYear = new Date().getFullYear()
   return (
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
@@ -49,35 +50,28 @@ export default function Contact() {
             <p>vnambs@gmail.com</p>
           </Rounded>
           <Rounded>
-            <p>+31 6 27 84 74 30</p>
+            <p>+261 329 252 937</p>
           </Rounded>
         </div>
         <div className={styles.info}>
           <div>
             <span>
               <h3>Version</h3>
-              <p>2022 © Edition</p>
-            </span>
-            <span>
-              <h3>Version</h3>
-              <p>11:49 PM GMT+2</p>
+              <p>{currentYear} © Edition</p>
             </span>
           </div>
           <div>
             <span>
-              <h3>socials</h3>
+              <h3>find me on</h3>
               <Magnetic>
-                <p>Awwwards</p>
+                <p>github</p>
               </Magnetic>
             </span>
             <Magnetic>
-              <p>Instagram</p>
+              <p>mail</p>
             </Magnetic>
             <Magnetic>
-              <p>Dribbble</p>
-            </Magnetic>
-            <Magnetic>
-              <p>Linkedin</p>
+              <p>blog</p>
             </Magnetic>
           </div>
         </div>

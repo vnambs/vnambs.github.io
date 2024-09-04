@@ -12,7 +12,7 @@ export default function Magnetic({ children }: MagneticProps) {
     if (!magnetic.current) return
 
     // Logging children for debugging
-    console.log(children)
+    // console.log(children)
 
     // QuickTo functions for smoother animations
     const xTo = gsap.quickTo(magnetic.current, 'x', {

@@ -6,38 +6,38 @@ import styles from './style.module.scss'
 const slider1 = [
   {
     color: '#e3e5e7',
-    src: 'c2.jpg',
+    src: 'docu.png',
   },
   {
     color: '#d6d7dc',
-    src: 'decimal.jpg',
+    src: 'sda.png',
   },
   {
     color: '#e3e3e3',
-    src: 'funny.jpg',
+    src: 'skiillz.png',
   },
   {
     color: '#21242b',
-    src: 'google.jpg',
+    src: 'strapi.png',
   },
 ]
 
 const slider2 = [
   {
     color: '#d4e3ec',
-    src: 'maven.jpg',
+    src: 'wp-restore.png',
   },
   {
     color: '#e5e0e1',
-    src: 'panda.jpg',
+    src: 'sda.png',
   },
   {
     color: '#d7d4cf',
-    src: 'powell.jpg',
+    src: 'docu.png',
   },
   {
     color: '#e1dad6',
-    src: 'wix.jpg',
+    src: 'skiillz.png',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function SlidingImages() {
           return (
             <div key={index} className={styles.project} style={{ backgroundColor: project.color }}>
               <div className={styles.imageContainer}>
-                <Image fill={true} alt={'image'} src={`/images/${project.src}`} />
+                <Image fill={true} alt={'image'} src={`/images/project/${project.src}`} />
               </div>
             </div>
           )
@@ -70,7 +70,7 @@ export default function SlidingImages() {
           return (
             <div key={index} className={styles.project} style={{ backgroundColor: project.color }}>
               <div key={index} className={styles.imageContainer}>
-                <Image fill={true} alt={'image'} src={`/images/${project.src}`} />
+                <Image fill={true} alt={'image'} src={`/images/project/${project.src}`} />
               </div>
             </div>
           )
