@@ -13,6 +13,7 @@ interface ProjectData {
   src: string
   color: string
   href: string
+  description: string
 }
 
 const projects: ProjectData[] = [
@@ -21,30 +22,35 @@ const projects: ProjectData[] = [
     src: 'docu.png',
     color: '#000000',
     href: '/docu',
+    description: 'Design & Development',
   },
   {
     title: 'SDA Church',
     src: 'sda.png',
     color: '#8C8C8C',
     href: '/docu',
+    description: 'Design & Development',
   },
   {
     title: 'Skiillz',
     src: 'skiillz.png',
     color: '#EFE8D3',
     href: 'https://skiillz.com',
+    description: 'Development',
   },
   {
     title: 'Strapi & chatbrew',
     src: 'strapi.png',
     color: '#706D63',
     href: '/docu',
+    description: ' Development',
   },
   {
     title: 'WP backup & Restore',
     src: 'wp-restore.png',
     color: '#706D63',
     href: '/docu',
+    description: 'Development',
   },
 ]
 
@@ -143,7 +149,14 @@ export default function Home() {
     >
       <div className={styles.body}>
         {projects.map((project, index) => (
-          <Project index={index} title={project.title} manageModal={manageModal} key={index} />
+          <Project
+            index={index}
+            title={project.title}
+            link={project.href}
+            description={project.description}
+            manageModal={manageModal}
+            key={index}
+          />
         ))}
       </div>
       <Rounded>
