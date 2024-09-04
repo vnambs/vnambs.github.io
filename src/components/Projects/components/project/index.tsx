@@ -1,14 +1,17 @@
 'use client'
+import Link from 'next/link'
 import React from 'react'
 import styles from './style.module.scss'
 
 interface IndexProps {
   index: number
   title: string
+  link: string
+  description: string
   manageModal: (isActive: boolean, index: number, clientX: number, clientY: number) => void
 }
 
-export default function index({ index, title, manageModal }: IndexProps) {
+export default function index({ index, title, link, description, manageModal }: IndexProps) {
   return (
     <div
       onMouseEnter={e => {
@@ -19,8 +22,10 @@ export default function index({ index, title, manageModal }: IndexProps) {
       }}
       className={styles.project}
     >
-      <h2>{title}</h2>
-      <p>Design & Development</p>
+      <Link href={link}>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </Link>
     </div>
   )
 }

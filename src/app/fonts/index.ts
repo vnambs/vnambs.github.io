@@ -1,4 +1,4 @@
-import local from '@next/font/local'
+import local from 'next/font/local'
 
 export const bergmans = local({
   src: [
