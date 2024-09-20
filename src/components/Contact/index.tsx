@@ -21,7 +21,7 @@ export default function Contact() {
 			<motion.div
 				style={{ y }}
 				ref={container}
-				className={`${styles.contact} sm:hidden`}>
+				className={`${styles.contact} flex sm:hidden`}>
 				<div className={styles.body}>
 					<div className={styles.title}>
 						<span>
@@ -94,7 +94,7 @@ export default function Contact() {
 			</motion.div>
 			<motion.div
 				ref={container}
-				className={`${styles.contact} !hidden sm:block`}>
+				className={`${styles.contact} hidden sm:flex`}>
 				<div className={`${styles.body}`}>
 					<div className={styles.title}>
 						<span>
