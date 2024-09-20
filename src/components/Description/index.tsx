@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import Rounded from '../../common/RoundedButton';
 import { opacity, slideUp } from './animation';
 import styles from './style.module.scss';
+import { acidGroteskFonts } from '@/app/fonts';
+import Link from 'next/link';
 export default function Description() {
 	const phrase =
 		'I help your projects stand out in the digital era by shaping the future together. Direct in approach and always pushing boundaries, I am committed to exploring new possibilities.';
@@ -34,7 +36,8 @@ export default function Description() {
 					variants={opacity}
 					animate={isInView ? 'open' : 'closed'}
 					data-scroll
-					data-scroll-speed={0.1}>
+					data-scroll-speed={0.1}
+					className={`${acidGroteskFonts.className} font-extralight`}>
 					I will leverage my enthusiasm for design, coding, and interaction to
 					bring a unique blend of experiences, creating engaging and distinctive
 					web projects that give me a strong advantage in the digital design
@@ -44,7 +47,9 @@ export default function Description() {
 					data-scroll
 					data-scroll-speed={0.1}>
 					<Rounded className={`${styles.button} mt-9`}>
-						<p>About me</p>
+						<p>
+							<Link href='/docu/about'> About me</Link>
+						</p>
 					</Rounded>
 				</div>
 			</div>

@@ -1,8 +1,8 @@
 'use client';
 import { AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Magnetic from '../../common/Magnetic';
@@ -57,7 +57,7 @@ export default function Header() {
 					<div className={styles.logo}>
 						<p className={styles.copyright}>©</p>
 						<div className={styles.name}>
-							<p className={styles.codeBy}>Code by</p>
+							<p className={styles.codeBy}>Jonathan</p>
 							<p className={styles.voary}>Voary</p>
 							<p className={styles.nambinina}>Nambinina</p>
 						</div>
