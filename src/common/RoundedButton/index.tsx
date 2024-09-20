@@ -10,7 +10,7 @@ interface RoundedButtonProps {
   [key: string]: any // Allows for any other attributes (like HTML div props)
 }
 
-export default function RoundedButton({ children, backgroundColor = '#455CE9', ...attributes }: RoundedButtonProps) {
+export default function RoundedButton({ children, backgroundColor = '#3cad6e', ...attributes }: RoundedButtonProps) {
   const circle = useRef<HTMLDivElement | null>(null)
   const timeline = useRef<gsap.core.Timeline | null>(null)
   let timeoutId: number | null = null

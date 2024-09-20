@@ -62,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bergmans.className}`}>
+      <body className={`${bergmans.className} font-semibold`}>
         <Header />
         {children}
       </body>

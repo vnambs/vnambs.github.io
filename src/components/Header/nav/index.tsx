@@ -1,3 +1,4 @@
+import { testTiemposFonts } from '@/fonts'
 import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
@@ -44,7 +45,7 @@ export default function Nav() {
           className={styles.nav}
         >
           <div className={styles.header}>
-            <p>Navigation</p>
+            <p className={`${testTiemposFonts.className} font-thin`}>Navigation</p>
           </div>
           {navItems.map((data, index) => {
             return (

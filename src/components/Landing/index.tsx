@@ -1,4 +1,5 @@
 'use client'
+import { acidGroteskFonts } from '@/fonts'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -43,12 +44,14 @@ export default function Home() {
 
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
-      <Image src="/images/background.jpg" fill={true} alt="background" />
+      <Image src="/images/background.png" fill={true} alt="background" />
       <div className={styles.sliderContainer}>
-        <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Freelance Developer -</p>
-          <p ref={secondText}>Freelance Developer -</p>
-        </div>
+        {/* <div
+					ref={slider}
+					className={styles.slider}>
+					<p ref={firstText}>Freelance Developer -</p>
+					<p ref={secondText}>Freelance Developer -</p>
+				</div> */}
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>
         <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,8 +60,8 @@ export default function Home() {
             fill="white"
           />
         </svg>
-        <p>Freelance</p>
-        <p>Designer & Developer</p>
+        <p className={`${acidGroteskFonts.className} font-semibold`}>Freelance</p>
+        <p className={`${acidGroteskFonts.className} font-semibold`}>Designer & Developer</p>
       </div>
     </motion.main>
   )
