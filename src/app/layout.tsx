@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: 'https://vnambs.github.io/images/portfolio-thumbnail.jpg',
   },
   verification: {
-    google: 'Yod585VwbJ6jJ7YJkdI9gPse4abWwoxVvFkdwitOxbE',
+    google: 'gRYp7Sx1zIhlmQGB5qGBQUnzCY3tXCCN4oM2XcZamIY',
   }
 }
 
