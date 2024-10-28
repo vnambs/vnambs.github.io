@@ -53,6 +53,9 @@ export const metadata: Metadata = {
     description,
     images: 'https://vnambs.github.io/images/portfolio-thumbnail.jpg',
   },
+  verification: {
+    google: 'Yod585VwbJ6jJ7YJkdI9gPse4abWwoxVvFkdwitOxbE',
+  }
 }
 
 export default function RootLayout({
